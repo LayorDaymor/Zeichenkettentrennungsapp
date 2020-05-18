@@ -8,15 +8,15 @@ let hintererTeilPlatz=document.getElementById("hintererTeil")
 let m1=feld1.split(feld2);
 let a;
 let b;
-
 if (trennenungM2.checked) {
+    
     vordererTeilPlatz.innerHTML=a=m1[0]+feld2;
     hintererTeilPlatz.innerHTML=b=m1[1];
 }
 
 else{
-    vordererTeilPlatz.innerHTML=a=feld2+m1[1];
-    hintererTeilPlatz.innerHTML=b=m1[0];
+    hintererTeilPlatz.innerHTML=b=feld2+m1[1];
+    vordererTeilPlatz.innerHTML=a=m1[0];
 }
 
     

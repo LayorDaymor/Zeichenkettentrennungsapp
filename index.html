@@ -1,4 +1,4 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -13,10 +13,9 @@
     label{
         font-family: 'Open Sans', sans-serif;
     }
-    .vorHinter{
-        display: flex;
-        justify-content: space-between;
 
+    h1{
+        font-size: 1.5rem;
     }
 </style>
 </head>
@@ -35,17 +34,21 @@
             <label for="trennenung2">danach trennen</label><br>
             <input type="button" value="Trennen" onclick="trennen()">
         </form>
-        <h3>Ausgabe</h3>
+        
     </div>
+    <h3 class="container">Ausgabe</h3>
     <div class="container vorHinter">
         <div>
-        <p class="lead">Vorderer teil</p>
-        <div id="vordererTeil"></div>
-        </div>
-        <div>
-        <p class="lead">Hinterer teil</p>
-        <div id="hintererTeil"></div>
-        </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12"> 
+                <p class="lead mb-0">Vorderer teil</p>
+                <div id="vordererTeil"></div></div>
+             
+                <div class="col-md-6 col-sm-12"> 
+                <p class="lead mb-0">Hinterer teil</p>
+                <div id="hintererTeil" ></div>
+                </div>
+            </div>
     </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
